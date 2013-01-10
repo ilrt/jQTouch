@@ -451,7 +451,7 @@
             var div = document.createElement('div');
             div.innerHTML = nodes;
 
-            $(div).children().each(function(index, node) {
+            $(div).find('.page').each(function(index, node) {
                 var $node = $(this);
                 if (!$node.attr('id')) {
                     $node.attr('id', 'page-' + (++newPageCount));
